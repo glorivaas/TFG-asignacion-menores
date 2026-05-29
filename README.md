@@ -12,17 +12,30 @@ Código de Python del Trabajo de Fin de Grado de Gloria Rivas: **Modelo de asign
 
 ## Archivos principales
 
+### `version1.py`
+
+Implementa el modelo matemático final desarrollado en el TFG (solucionado con el método lexicográfico como ejemplo).
+
+Incluye:
+
+* Definición de conjuntos y parámetros.
+* Índice compuesto de bienestar.
+* Restricciones de capacidad y emergencia.
+* Funciones objetivo multiobjetivo.
+
+---
+
 ### `version2.py`
 
-Implementa el modelo matemático final desarrollado en el TFG.
+Implementa el modelo 2 (solucionado con el método lexicográfico como ejemplo).
 
 Incluye:
 
 * Definición de conjuntos y parámetros.
 * Construcción de la cuota de equidad territorial basada en el Real Decreto-ley 2/2025.
-* Índice compuesto de bienestar.
+* Índice compuesto de bienestar (con las modificaciones correspondientes).
 * Restricciones de capacidad y emergencia.
-* Funciones objetivo multiobjetivo.
+* Funciones objetivo multiobjetivo (con las modificaciones correspondientes).
 
 ---
 
@@ -37,12 +50,27 @@ Las preferencias se construyen a partir de hipótesis de permanencia territorial
 
 ---
 
+### `conjuntoeficiente_completo.py`
+
+Construcción aproximada del conjunto eficiente con las correspondientes variables asociadas a cada una de las soluciones. Utiliza para ello:
+
+* Método de ponderaciones.
+* Método de las epsilon-restricciones.
+
+---
+
 ### `lex_wgp.py`
 
-Implementa los métodos de optimización multiobjetivo empleados en el trabajo:
+Implementa los métodos de optimización multicriterio:
 
-* Optimización lexicográfica.
+* Método lexicográfico.
 * Weighted Goal Programming (WGP).
+
+---
+
+### `compromiseprogramming_direct.py`
+
+Calcula las soluciones de compromiso para cada versión directamente, sin utilizar el conjunto eficiente aproximado como base.
 
 ---
 
@@ -51,7 +79,7 @@ Implementa los métodos de optimización multiobjetivo empleados en el trabajo:
 Selecciona soluciones representativas del conjunto eficiente utilizando:
 
 * Soluciones extremas.
-* Compromise Programming.
+* Compromise Programming aproximado.
 * Diversificación mediante farthest-point sampling.
 
 ---
@@ -124,12 +152,14 @@ python src/generacion_probabilidades.py
 ### 2. Ejecutar el modelo
 
 ```bash
+python src/version1.py
 python src/version2.py
 ```
 
 ### 3. Resolver los escenarios multiobjetivo
 
 ```bash
+python src/conjuntoeficiente_completo.py
 python src/lex_wgp.py
 ```
 
@@ -137,13 +167,14 @@ python src/lex_wgp.py
 
 ```bash
 python src/seleccionsoluciones.py
+python src/compromiseprogramming_direct.py
+python src/compromiseprogramming_direct2.py
 ```
 
 ### 5. Generar métricas e indicadores
 
 ```bash
 python src/generador_metricasresultados.py
-
 python src/generador_kpi.py
 ```
 
@@ -153,11 +184,11 @@ python src/generador_kpi.py
 
 Gloria Rivas.
 
-**Modelo de asignación de menores migrantes no acompañados a centros de acogida en España mediante optimización multiobjetivo.**
+**Modelo de asignación de menores no acompañados a centros de acogida en España.**
 
 Trabajo de Fin de Grado en Ingeniería Matemática.
 
-Universidad Pontificia Comillas (ICAI), 2026.
+Universidad Complutense de Madrid (UCM), 2026.
 
 ---
 
