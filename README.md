@@ -14,8 +14,9 @@ Instalar dependencias:
 
 ```bash
 pip install -r requirements.txt
-´´´
-### Requisitos adicionales
+```
+
+## Requisitos adicionales
 
 El proyecto utiliza Gurobi Optimizer.
 
