@@ -21,7 +21,6 @@ pip install -r requirements.txt
 El proyecto utiliza Gurobi Optimizer.
 
 Es necesario disponer de una licencia válida de Gurobi para ejecutar los modelos de optimización.
-```
 
 # TFG-asignacion-menores
 
