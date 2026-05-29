@@ -4,8 +4,8 @@ Código de Python del Trabajo de Fin de Grado de Gloria Rivas: **Modelo de asign
 
 ## Contenido
 
-- `codigo/`: scripts utilizados para construir y resolver el modelo.
-- `datos/`: ficheros de entrada utilizados.
+- `src/`: scripts utilizados para construir y resolver el modelo.
+- `data/`: ficheros de entrada utilizados.
 - `resultados/`: tablas y figuras generadas.
 
 ---
