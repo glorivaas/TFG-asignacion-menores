@@ -1,0 +1,4 @@
+method,scenario,g1,g2,g3,w1,w2,w3,wgp_score,d1_plus,d2_plus,d3_minus,f1,f2,f3,description
+wgp,equilibrado_exigente,1000.0,1000000000.0,32000.0,0.34,0.33,0.33,0.024974584906588715,175.52979795517058,13419.666666666666,15.12451883583799,1175.529797955306,1000013419.666667,31984.87548116276,"Escenario exigente en los tres criterios, buscando un compromiso real entre equidad, coste y bienestar."
+wgp,restriccion_presupuestaria_dura,1600.0,900000000.0,24000.0,0.25,0.5,0.25,1.0456246693531595,416.67679301565965,86765491.83333333,0.0,2016.6767930156598,986765491.8333336,24000.137769516063,"Escenario con fuerte restricción presupuestaria, manteniendo requisitos razonables en equidad y bienestar."
+wgp,bienestar_ambicioso,1600.0,1010000000.0,37000.0,0.1,0.1,0.8,0.07660042048040584,1858.3909144226418,0.0,0.0,3458.390914422642,1010000000.0000002,37005.87450183771,"Escenario orientado a garantizar niveles muy altos de bienestar, admitiendo cierto sacrificio en coste y equidad."
